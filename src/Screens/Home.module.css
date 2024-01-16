@@ -1,0 +1,24 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Assets/fondo-home.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homeH1{
+    margin: 0;
+    padding-left: 10%;
+    color: #ffd89f;
+    font-size: 3em;
+}
+
+.homeH2{
+    margin: 0;
+    font-size: 1.4em;
+    padding-left: 10%;
+    color: #fff;
+}

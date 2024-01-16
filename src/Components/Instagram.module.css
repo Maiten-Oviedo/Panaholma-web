@@ -1,0 +1,17 @@
+.button{
+    padding: 5px;
+    margin: 0;
+    border: solid 1px rgb(83, 24, 83);
+    height: max-content;
+    width: max-content;
+    font-size: 2.5em;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(165, 46, 165);
+    background: #ffd89f;
+}
