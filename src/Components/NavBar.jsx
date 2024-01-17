@@ -52,11 +52,11 @@ const NavBar = () => {
     <nav className={navBarOpen ? styles.navOpen : scrollPosition > 0 ? styles.navOnScroll : styles.navBar}>
         <div className={styles.logo}>
             <p style={{margin: 8}}>
-                Panaholma | Cervezas
+                {windowDimension.width < 800 ? "Panaholma" : "Panahoma | Cervezas"}
             </p>
 
-            {!navBarOpen && windowDimension.width < 800 ? (<AiOutlineMenu onClick={() => {setNavBarOpen(!navBarOpen)}} size={25}/>)
-            :( windowDimension.width < 800 && (<IoMdClose onClick={() => {setNavBarOpen(!navBarOpen)}} size={25} />))}
+            {!navBarOpen && windowDimension.width < 800 ? (<AiOutlineMenu className={styles.menuIcon} onClick={() => {setNavBarOpen(!navBarOpen)}} size={25}/>)
+            :( windowDimension.width < 800 && (<IoMdClose className={styles.menuIcon} onClick={() => {setNavBarOpen(!navBarOpen)}} size={25} />))}
         </div>
         
         {navBarOpen && (

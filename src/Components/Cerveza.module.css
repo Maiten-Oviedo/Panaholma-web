@@ -1,0 +1,17 @@
+.cervezaCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cervezaImg{
+    width: 300px;
+    height: 375px;
+    border-radius: 15px;
+}
+
+.cervezaStrong{
+    color: #8d662a;
+}

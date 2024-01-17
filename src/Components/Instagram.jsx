@@ -4,8 +4,8 @@ import  styles  from './Instagram.module.css';
 
 const Instagram = () => {
   return (
-    <button className={styles.button} type="button"><FaInstagram />
-    </button>
+    <a href='https://www.instagram.com/panaholma_cerveza' target='_blank' rel='noopener noreferrer' className={styles.button}><FaInstagram />
+    </a>
   )
 }
 
