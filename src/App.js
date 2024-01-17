@@ -1,5 +1,6 @@
 import Instagram from "./Components/Instagram";
 import NavBar from "./Components/NavBar";
+import AboutUs from "./Screens/AboutUs";
 import Cervezas from "./Screens/Cervezas";
 import Home from "./Screens/Home";
 
@@ -10,6 +11,7 @@ function App() {
       <Home/>
       <Instagram/>
       <Cervezas/>
+      <AboutUs/>
     </div>
   );
 }

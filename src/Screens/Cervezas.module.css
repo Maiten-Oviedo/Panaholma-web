@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-.cervezasP{
+.cervezasH3{
     font-size: 1.1em;
     color: #8d662a;
     font-weight: 500;
@@ -27,6 +27,7 @@
     padding: 0 10%;
     justify-content: center;
     gap: 1em;
+    margin: 0;
 }
 
 @media screen and (width > 800px) {

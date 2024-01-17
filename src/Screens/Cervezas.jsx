@@ -38,7 +38,7 @@ const Cervezas = () => {
     return (
         <section id='Cervezas' className={styles.cervezas}>
             <h2 className={styles.cervezasTitle}>NUESTRAS CERVEZAS</h2>
-            <p className={styles.cervezasP}>DESDE 1999</p>
+            <h3 className={styles.cervezasP}>DESDE 1999</h3>
             <ul className={styles.cervezasList}>
                 {cervezas.map((cerveza)=>{
                     return(
