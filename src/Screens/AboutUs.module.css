@@ -1,17 +1,41 @@
 .aboutUs{
-    padding: 4em 10% 0 10%;
+    padding: 4em 10% 4em 10%;
     background-color: #ddd; 
-    border-top: 1px solid #222;
+    background: url("../Assets/nosotros.jpg") no-repeat center center fixed;
+    background-size: cover;
 }
 
 .aboutUsH1{
     font-size: 2.2em;
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 
 .aboutUsH3{
     margin: 0;
+    margin-bottom: 2em;
     font-size: 1.1em;
-    color: #8d662a;
+    color: #ffd89f;
 }
+
+.aboutUsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aboutUsP{
+    max-width: 550px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.aboutUsImg{
+    border-radius: 15px;
+    width: 250px;
+    height: auto;
+}
+

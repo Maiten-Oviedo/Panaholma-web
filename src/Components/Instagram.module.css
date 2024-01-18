@@ -14,7 +14,8 @@
     color: #fff;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(237,131,0,1) 100%);
-    transition: .2s ease all
+    transition: .2s ease all;
+    z-index: 10;
 }
 
 .button:hover{

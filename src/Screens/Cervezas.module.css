@@ -1,6 +1,6 @@
 .cervezas{
     width: 100%;
-    background-color: #ddd;
+    background-color: #fff;
 }
 
 .cervezasTitle{
@@ -13,31 +13,29 @@
 }
 
 .cervezasH3{
+    margin: 0;
     font-size: 1.1em;
     color: #8d662a;
     font-weight: 500;
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-bottom: 3em;
 }
 
 .cervezasList{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 0 10%;
     justify-content: center;
-    gap: 1em;
+    align-items: flex-start;
     margin: 0;
 }
 
 @media screen and (width > 800px) {
     .cervezasTitle{
-        display: block;
-        width: auto;
-        margin: 0;
         padding-top: 2em;
         font-size: 2.5em;
-        margin-left: 10%;
     }
 
     .cervezasP{
@@ -50,6 +48,8 @@
     }    
 
     .cervezasList{
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 }

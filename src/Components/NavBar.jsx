@@ -30,20 +30,24 @@ const NavBar = () => {
     const links = [
         { 
             id: 1,
-            link: "Cervezas" 
+            link: 'Cervezas', 
         },
         { 
             id: 2, 
-            link: "Nosotros" 
+            link: 'Nosotros', 
         },
         {
             id:3,
-            link:"Contacto",
+            link:'Fábrica',
         },
         {
             id:4,
             link:'DondeEncontrarnos',
         },
+        {
+            id:5,
+            link: 'Contacto'
+        }
     ];
 
     const scrollPosition = useScrollPosition;
@@ -51,12 +55,16 @@ const NavBar = () => {
   return (
     <nav className={navBarOpen ? styles.navOpen : scrollPosition > 0 ? styles.navOnScroll : styles.navBar}>
         <div className={styles.logo}>
-            <p style={{margin: 8}}>
-                {windowDimension.width < 800 ? "Panaholma" : "Panahoma | Cervezas"}
-            </p>
+            <img className={styles.logoImg} src={require('../Assets/logo.jpg')} alt="Logo" />
 
-            {!navBarOpen && windowDimension.width < 800 ? (<AiOutlineMenu className={styles.menuIcon} onClick={() => {setNavBarOpen(!navBarOpen)}} size={25}/>)
-            :( windowDimension.width < 800 && (<IoMdClose className={styles.menuIcon} onClick={() => {setNavBarOpen(!navBarOpen)}} size={25} />))}
+            {!navBarOpen && windowDimension.width < 800 ? (<AiOutlineMenu className={styles.menuIcon} onClick={() => {
+                setNavBarOpen(!navBarOpen);
+                document.body.style.overflow = 'hidden';
+            }} size={25}/>)
+            :( windowDimension.width < 800 && (<IoMdClose className={styles.menuIcon} onClick={() => {
+                setNavBarOpen(!navBarOpen);
+                document.body.style.overflow = '';
+                }} size={25} />))}
         </div>
         
         {navBarOpen && (

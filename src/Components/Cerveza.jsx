@@ -2,13 +2,17 @@ import React from 'react';
 import styles from './Cerveza.module.css';
 
 const Cerveza = ( { key, nombre, descripcion, grados, img } ) => {
+  console.log(img)
   return (
-    <article className={styles.cervezaCard}>
+    <li key={key} className={styles.cervezaCard}>
         <img className={styles.cervezaImg} src={img} alt={nombre} />
-        <h2>{nombre}</h2>
-        <p><strong className={styles.cervezaStrong}>Descripción:</strong> {descripcion}</p>
-        <p><strong className={styles.cervezaStrong}>Grado de alcohol:</strong> {grados}</p>
-    </article>
+        <div className={styles.cervezaContainer}>
+          <h2 className={styles.cervezaH2}> {nombre}</h2>
+          <p className={styles.cervezaInfo}>{grados}</p>
+          <p className={styles.cervezaDesc}> {descripcion}</p>
+          
+        </div>
+    </li>
   )
 }
 

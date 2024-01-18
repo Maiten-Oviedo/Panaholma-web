@@ -16,8 +16,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #4a4564;
-    color: #fff;
+    background-color: #ccc;
+    color: #8d662a;
+    z-index: 20;
 }
 
 .logo {
@@ -28,14 +29,20 @@
     justify-content: space-between;
     font-size: 2.3em;
     font-weight: 500;
-    padding-left: 10%;
-    padding-right: 10%;
     transition: .3s ease all;
+}
+
+.logoImg{
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    padding: 5% 10%;
 }
 
 .menuIcon{
     width: 40px;
     height: 40px;
+    padding-right: 10%;
 }
 
 .logo:hover{
@@ -51,6 +58,8 @@
     align-items: center;
     list-style: none;
     padding-right: 10%;
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
 .navLi{
@@ -80,12 +89,19 @@
     .logo{
         font-size: 2em;
         margin: 0;
+        padding-left: 10%;
+    }
+
+    .logoImg{
+        padding: 0;
     }
 
     .itemsMenu{
         flex-direction: row;
         margin: 0;
         gap: 2em;
+        font-size: 1em;
+        font-weight: 100;
     }
     .navLi{
         font-size: 1.1em;
