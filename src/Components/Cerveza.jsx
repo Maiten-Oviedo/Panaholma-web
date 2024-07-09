@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Cerveza.module.css';
 
-const Cerveza = ( { key, nombre, descripcion, grados, img } ) => {
+const Cerveza = ( {nombre, descripcion, grados, img } ) => {
   return (
     <article className={styles.cervezaCard}>
         <img className={styles.cervezaImg} src={img} alt={nombre} />
